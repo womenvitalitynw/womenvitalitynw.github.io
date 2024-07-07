@@ -51,7 +51,24 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
+	
+/* side-by-side image and text */
+	.side-by-side {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.side-by-side .image,
+	.side-by-side .content {
+		flex: 1;
+		margin: 10px;
+	}
+	
+	.side-by-side .image img {
+		max-width: 100%;
+		height: auto;
+	}
 /* Box Model */
 
 	*, *:before, *:after {
